@@ -1,22 +1,19 @@
 #### Description
 
-3-5 sentences describing the issue
+Code doesn't seem to work when data stored in redis Hash
 
 #### Steps to Reproduce
 
-Step by step instructions on how to reproduce this issue
+items=redis_instance.hgetall(key)
 
 ##### Expected Behavior
 
-Description of the expected behavior
+Return all records from the Redis db
 
 ##### Actual Behavior
 
-Description of what actually happens
+Only returns the last record.
 
 #### Additional Information
 
-Information regarding the environment where the issue occurred. This can include
-information such as location, platform, origin, version or environment. 
-
-Any additional information, configuration or data that might be necessary or helpful to reproduce the issue and help in identification and resolution of the issue.
+Perhaps you didn't design this example if the data in Redis is stored as a Hash?  Can't seem to figure out why only the last record is displayed?
